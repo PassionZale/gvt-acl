@@ -1,0 +1,35 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "项目描述",
+      "default": "Frontend Repo For GVT"
+    },
+    "author": {
+      "type": "string",
+      "label": "作者"
+    },
+    "license": {
+      "type": "string",
+      "label": "License",
+      "default": "MIT"
+    },
+    "less": {
+      "type": "confirm",
+      "message": "使用 Less ?",
+      "default": true
+    },
+    "sass": {
+       "type": "confirm",
+       "message": "使用 sass ?",
+       "default": false
+    }
+  },
+  "completeMessage": "{{#inPlace}}To get started:\n\n  npm install\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  cp .env env.js\n  npm run dev{{/inPlace}}"
+}
