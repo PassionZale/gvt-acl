@@ -3,17 +3,20 @@
     "name": {
       "type": "string",
       "required": true,
-      "label": "Project name"
+      "label": "项目名称",
+      "default": "A GVT Frontend Project"
     },
     "description": {
       "type": "string",
       "required": true,
       "label": "项目描述",
-      "default": "Frontend Repo For GVT"
+      "default": "Based On Vuejs"
     },
     "author": {
       "type": "string",
-      "label": "作者"
+      "required": true,
+      "label": "作者",
+      "default": "Frontend Developers For GVT"
     },
     "license": {
       "type": "string",
@@ -31,5 +34,5 @@
        "default": false
     }
   },
-  "completeMessage": "{{#inPlace}}To get started:\n\n  npm install\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  cp .env env.js\n  npm run dev{{/inPlace}}"
+  "completeMessage": "{{#inPlace}}To get started:\n\n  cp .env env.js\n  npm install\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  cp .env env.js\n  npm install\n  npm run dev{{/inPlace}}"
 }
