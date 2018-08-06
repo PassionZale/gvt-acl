@@ -37,11 +37,7 @@ export default new VueRouter({
   routes: basicRouterMap
 });
 
-export const dynamicRouterMap = [{
-    path: '',
-    redirect: ''
-  },
-
+export const dynamicRouterMap = [
   {
     path: '*',
     redirect: '/404'
