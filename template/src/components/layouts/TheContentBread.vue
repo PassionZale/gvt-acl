@@ -1,6 +1,6 @@
 <template>
     <Breadcrumb :style="{margin: '16px 0'}">
-        <BreadcrumbItem v-for="nav in navs" :key="nav.name">{{ nav.meta.title }}</BreadcrumbItem>
+        <BreadcrumbItem v-for="nav in navs" :key="nav.name">\{{ nav.meta.title }}</BreadcrumbItem>
     </Breadcrumb>
 </template>
 

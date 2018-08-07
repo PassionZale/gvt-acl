@@ -3,7 +3,7 @@
     <img class="layout-logo" :src="GvtLogo" alt="GvtLogo">
     <Dropdown :style="{float: 'right'}">
         <Button type="text" :style="{color: '#fff'}">
-          {{ user.username }}
+          \{{ user.username }}
           <Icon type="arrow-down-b"></Icon>
         </Button>
         <DropdownMenu slot="list">
