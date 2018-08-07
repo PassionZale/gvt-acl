@@ -1,5 +1,3 @@
-import env from '../../env'
-
 export const baseURL = process.env.NODE_ENV === 'production' ?
-    env.pro.path :
-    env.dev.path
+  'http://pro.com/api' :
+  'http://localhost:8020'

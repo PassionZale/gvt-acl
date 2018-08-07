@@ -1,17 +1,18 @@
 <template>
-    <gvt-sidebar></gvt-sidebar>
-    <div>
-        <gvt-header></gvt-header>
-        <gvt-footer></gvt-footer>
+    <div class="layout">
+        <gvt-side-bar></gvt-side-bar>
+        <Layout :style="{marginLeft: '200px'}">
+            <gvt-header></gvt-header>
+            <gvt-content></gvt-content>
+        </Layout>
     </div>
 </template>
 
 <script>
-import cHeader from './TheHeader.vue'
-import cSidebar from  './TheSidebar.vue'
-import cFooter from './TheFooter.vue'
+import GvtHeader from "./TheHeader.vue";
+import GvtSideBar from "./TheSideBar.vue";
+import GvtContent from "./TheContent.vue";
 export default {
-    components: {cHeader, cSidebar, cFooter}
-}
+  components: { GvtHeader, GvtSideBar, GvtContent }
+};
 </script>
-

@@ -1,5 +1,5 @@
 <template>
-    <code>./src/views/console/Index.vue</code>
+    <code>./src/views/system/Permission.vue</code>
 </template>
 
 <script>

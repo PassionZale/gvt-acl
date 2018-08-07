@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "code": "200",
+  "message": "成功",
+  "time": 1533545100737,
+  "data": {
+    "functionCode": [
+      "store_manage", 
+      
+      "permission_manage",
+      "role_manage",
+      "user_manage",
+
+      "purchase_order",
+      "plan_order",
+      "generate_order",
+
+      "account_manage",
+      "notify_manage"
+    ]
+  }
+}

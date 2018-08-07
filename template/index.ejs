@@ -3,12 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{{ name }}</title>
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="//cdn.bootcss.com/iview/2.14.0/styles/iview.css">
 </head>
 
 <body>
+
   <div id="app"></div>
 
   <!-- Main Javascript Libaries-->
@@ -27,7 +30,6 @@
   <script src="//cdn.bootcss.com/iview/2.14.0/iview.min.js"></script>
 
   <!-- Entry Javascript File -->
-  <script type="text/javascript" src="/dist/index.bundle.js"></script>
 </body>
 
 </html>

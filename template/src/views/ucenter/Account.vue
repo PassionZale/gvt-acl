@@ -1,5 +1,5 @@
 <template>
-    <code>./src/views/console/Index.vue</code>
+    <code>./src/views/ucenter/Account.vue</code>
 </template>
 
 <script>

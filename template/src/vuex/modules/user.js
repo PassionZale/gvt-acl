@@ -1,6 +1,13 @@
-import { login } from '../../api/auth'
-import { fetchUserInfo } from '../../api/user'
-import { setToken, removeToken } from '../../utils/auth'
+import {
+  login
+} from '../../api/auth'
+import {
+  fetchUserInfo
+} from '../../api/user'
+import {
+  setToken,
+  removeToken
+} from '../../utils/auth'
 
 const user = {
   state: {
@@ -22,7 +29,9 @@ const user = {
   },
 
   actions: {
-    Login({ commit }, params) {
+    Login({
+      commit
+    }, params) {
       return new Promise((resolve, reject) => {
         login(params).then(response => {
           if (response.ret_code === 0) {
@@ -41,17 +50,23 @@ const user = {
       removeToken();
       return;
     },
-    FetchUserInfo({ commit }) {
+    FetchUserInfo({
+      commit
+    }) {
       return new Promise((resolve, reject) => {
         fetchUserInfo().then(response => {
-          if (response.ret_code === 0) {
-            let userinfo = response.ret_msg;
+          if (response.success) {
+            let userinfo = {
+              username: 'GVT',
+              role: 'developer',
+              permissions: response.data.functionCode
+            }
             commit('SET_USERNAME', userinfo.username);
             commit('SET_ROLE', userinfo.role);
             commit('SET_PERMISSIONS', userinfo.permissions);
             resolve(userinfo);
           } else {
-            reject(response.ret_msg);
+            reject(response.message);
           }
         }).catch(error => {
           reject(error);
