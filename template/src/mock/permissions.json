@@ -5,7 +5,7 @@
   "time": 1533545100737,
   "data": {
     "functionCode": [
-      "store_manage", 
+      "product_store_permission", 
       
       "permission_manage",
       "role_manage",

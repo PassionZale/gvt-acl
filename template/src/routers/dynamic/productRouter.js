@@ -19,6 +19,7 @@ const productRouter = {
     component: _import('product/Index'),
     meta: {
       title: '门店商品',
+      permissions: ['product_store_permission']
     },
     redirect: '/product/store/list',
     children: [{
